@@ -6,7 +6,7 @@ target 'GMAMediationFluctSDK' do
   use_frameworks!
 
   # Pods for GMAMediationFluctSDK
-  pod 'Google-Mobile-Ads-SDK', '7.46.0'
+  pod 'Google-Mobile-Ads-SDK'
   pod 'FluctSDK'
   pod 'FluctSDK-MediationAdapter'
   pod 'GoogleMobileAdsMediationFluct'

@@ -55,6 +55,7 @@ extension VideoRewardViewController: GADRewardBasedVideoAdDelegate {
     func rewardBasedVideoAdDidReceive(_ rewardBasedVideoAd: GADRewardBasedVideoAd) {
         loadButton?.isEnabled = true
         playButton?.isEnabled = true
+        print("rewardBasedVideoAd.adNetworkClassName:   \(rewardBasedVideoAd.adNetworkClassName ?? "nil")")
     }
 
     func rewardBasedVideoAd(_ rewardBasedVideoAd: GADRewardBasedVideoAd, didFailToLoadWithError error: Error) {

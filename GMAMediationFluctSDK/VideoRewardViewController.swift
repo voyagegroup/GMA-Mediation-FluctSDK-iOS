@@ -6,6 +6,9 @@
 import UIKit
 import GoogleMobileAds
 
+import FluctSDK
+import GoogleMobileAdsMediationFluct
+
 private let videoRewardedAdUnitID = "/62532913/a_fluct.test_1024x768_kosugetest_11940"
 
 class VideoRewardViewController: UIViewController {
@@ -37,7 +40,16 @@ extension VideoRewardViewController {
     func touchLoadButton(_ button: UIButton) {
         loadButton?.isEnabled = false
         GADRewardBasedVideoAd.sharedInstance().delegate = self
-        GADRewardBasedVideoAd.sharedInstance().load(DFPRequest(), withAdUnitID: videoRewardedAdUnitID)
+        let setting = FSSRewardedVideoSetting.default
+        setting.isDebugMode = true
+        // 配信したくないADNWを無効にする
+        setting.activation.isAdCorsaActivated = false
+        setting.activation.isUnityAdsActivated = false
+        let extra = GADMAdapterFluctExtras()
+        extra.setting = setting
+        let request = DFPRequest()
+        request.register(extra)
+        GADRewardBasedVideoAd.sharedInstance().load(request, withAdUnitID: videoRewardedAdUnitID)
     }
 
     @IBAction

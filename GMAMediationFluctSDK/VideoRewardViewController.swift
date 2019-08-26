@@ -45,8 +45,11 @@ extension VideoRewardViewController {
         // 配信したくないADNWを無効にする
         setting.activation.isAdCorsaActivated = false
         setting.activation.isUnityAdsActivated = false
+        let targeting = FSSAdRequestTargeting()
+        targeting.age = 30
         let extra = GADMAdapterFluctExtras()
         extra.setting = setting
+        extra.targeting = targeting
         let request = DFPRequest()
         request.register(extra)
         GADRewardBasedVideoAd.sharedInstance().load(request, withAdUnitID: videoRewardedAdUnitID)

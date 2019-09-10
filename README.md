@@ -14,7 +14,7 @@ CocoaPods: 1.7.5
 
 ```
 FluctSDK: 5.10.2
-FluctSDK-MediationAdapter: 5.20.2
+FluctSDK-MediationAdapter: 5.10.2
 Google-Mobile-Ads-SDK: 7.49.0
 ```
 

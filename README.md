@@ -5,17 +5,17 @@ Google AdManagerのメディエーションする実装サンプルです
 ## 環境
 
 ```
-xcode:  10.2
+xcode:  10.3
 Swift:  5.0
-CocoaPods: 1.7.1  
+CocoaPods: 1.7.5  
 ```
 
 ## 使用しているFrameworkのバージョン
 
 ```
-FluctSDK: 5.5.0
-FluctSDK-MediationAdapter: 5.5.0
-Google-Mobile-Ads-SDK: 7.42.2
+FluctSDK: 5.10.2
+FluctSDK-MediationAdapter: 5.20.2
+Google-Mobile-Ads-SDK: 7.49.0
 ```
 
 ## 環境構築

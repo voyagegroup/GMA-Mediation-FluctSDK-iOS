@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="P3L-Id-Hqr">
-    <device id="retina6_1" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="P3L-Id-Hqr">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
+        <!--Menu-->
         <scene sceneID="Pfa-hy-fa9">
             <objects>
                 <tableViewController id="eQ4-0W-8kI" sceneMemberID="viewController">
@@ -21,15 +19,15 @@
                         <sections>
                             <tableViewSection headerTitle="GMA Mediation" id="lB7-J0-3Yt">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="KRG-RD-Oyz" style="IBUITableViewCellStyleDefault" id="I9H-Oy-THm">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="KRG-RD-Oyz" style="IBUITableViewCellStyleDefault" id="I9H-Oy-THm">
                                         <rect key="frame" x="0.0" y="55.5" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="I9H-Oy-THm" id="voF-i6-wD5">
-                                            <rect key="frame" x="0.0" y="0.0" width="376" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="382.5" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="動画リワード" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="KRG-RD-Oyz">
-                                                    <rect key="frame" x="20" y="0.0" width="356" height="43.5"/>
+                                                    <rect key="frame" x="20" y="0.0" width="354.5" height="44"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="16"/>
                                                     <nil key="textColor"/>
@@ -41,15 +39,15 @@
                                             <segue destination="dRP-d6-BS8" kind="show" id="Tdb-Aq-ioK"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="mLZ-EJ-d7F" style="IBUITableViewCellStyleDefault" id="dsL-lW-Z3F">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="mLZ-EJ-d7F" style="IBUITableViewCellStyleDefault" id="dsL-lW-Z3F">
                                         <rect key="frame" x="0.0" y="99.5" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dsL-lW-Z3F" id="D3w-et-XSg">
-                                            <rect key="frame" x="0.0" y="0.0" width="376" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="382.5" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="動画インタースティシャル" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="mLZ-EJ-d7F">
-                                                    <rect key="frame" x="20" y="0.0" width="356" height="43.5"/>
+                                                    <rect key="frame" x="20" y="0.0" width="354.5" height="44"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="16"/>
                                                     <nil key="textColor"/>
@@ -69,7 +67,7 @@
                             <outlet property="delegate" destination="eQ4-0W-8kI" id="OYW-YK-4Qg"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="dvP-rg-Yvr"/>
+                    <navigationItem key="navigationItem" title="Menu" id="dvP-rg-Yvr"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qkb-9J-96g" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -107,7 +105,7 @@
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="B2C-aQ-OkI" firstAttribute="centerY" secondItem="nmb-rL-XWf" secondAttribute="centerY" id="Rzk-op-g5w"/>
                             <constraint firstItem="B2C-aQ-OkI" firstAttribute="leading" secondItem="nmb-rL-XWf" secondAttribute="leading" constant="16" id="h4k-EL-1v2"/>
@@ -174,7 +172,7 @@
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="22o-Ao-89l" secondAttribute="trailing" constant="16" id="1nj-aV-ChX"/>
                             <constraint firstItem="22o-Ao-89l" firstAttribute="centerY" secondItem="yOF-UO-iSp" secondAttribute="centerY" id="9x5-X1-cKc"/>

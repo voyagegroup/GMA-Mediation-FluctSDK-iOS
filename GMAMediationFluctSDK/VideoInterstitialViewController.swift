@@ -25,8 +25,6 @@ class VideoInterstitialViewController: UIViewController {
         // Do any additional setup after loading the view.
         loadButton?.isEnabled = true
         playButton?.isEnabled = false
-
-        title = "動画インタースティシャル"
     }
     
 }

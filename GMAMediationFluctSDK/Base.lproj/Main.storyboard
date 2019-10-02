@@ -73,7 +73,7 @@
             </objects>
             <point key="canvasLocation" x="881.15942028985512" y="86.383928571428569"/>
         </scene>
-        <!--Video Reward View Controller-->
+        <!--RewardedVideo-->
         <scene sceneID="Sjc-BM-H5o">
             <objects>
                 <viewController id="dRP-d6-BS8" customClass="VideoRewardViewController" customModule="GMAMediationFluctSDK" customModuleProvider="target" sceneMemberID="viewController">
@@ -113,6 +113,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="gyy-cK-QYf"/>
                     </view>
+                    <navigationItem key="navigationItem" title="RewardedVideo" id="0LP-3L-WtR"/>
                     <connections>
                         <outlet property="loadButton" destination="XXR-iO-Hdl" id="RjL-7x-jDU"/>
                         <outlet property="playButton" destination="xGx-aG-k43" id="dd3-45-Jjw"/>
@@ -127,8 +128,8 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="P3L-Id-Hqr" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="BTt-jc-2GO">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="BTt-jc-2GO">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -140,7 +141,7 @@
             </objects>
             <point key="canvasLocation" x="-28.985507246376812" y="86.383928571428569"/>
         </scene>
-        <!--Video Interstitial View Controller-->
+        <!--Video Interstitial-->
         <scene sceneID="NjJ-g3-GBI">
             <objects>
                 <viewController id="C1a-MC-GTO" customClass="VideoInterstitialViewController" customModule="GMAMediationFluctSDK" customModuleProvider="target" sceneMemberID="viewController">
@@ -180,6 +181,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="9Zd-qK-CRO"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Video Interstitial" id="2dQ-Dd-6ad"/>
                     <connections>
                         <outlet property="loadButton" destination="F1O-Dv-FPI" id="8XY-si-ej5"/>
                         <outlet property="playButton" destination="AbD-Kx-L7F" id="IgB-lr-WDh"/>

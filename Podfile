@@ -9,6 +9,8 @@ target 'GMAMediationFluctSDK' do
   pod 'Google-Mobile-Ads-SDK'
   pod 'FluctSDK'
   pod 'FluctSDK-MediationAdapter'
+  pod 'AdColony', '4.1.1'
+  pod 'MaioSDK', '1.4.8'
   pod 'GoogleMobileAdsMediationFluct'
 
 end

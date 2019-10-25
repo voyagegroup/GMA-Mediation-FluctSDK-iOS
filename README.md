@@ -6,7 +6,7 @@ Google AdManagerのメディエーションする実装サンプルです
 
 ```
 iOS: 13
-xcode:  11.0
+xcode:  10.3
 Swift:  5.1
 CocoaPods: 1.8.1  
 ```
@@ -14,9 +14,9 @@ CocoaPods: 1.8.1
 ## 使用しているFrameworkのバージョン
 
 ```
-FluctSDK: 5.11.1
-FluctSDK-MediationAdapter: 5.11.1
-Google-Mobile-Ads-SDK: 7.50.0
+FluctSDK: 5.13.0
+FluctSDK-MediationAdapter: 5.13.0
+Google-Mobile-Ads-SDK: 7.51.0
 ```
 
 ## 環境構築
@@ -54,3 +54,15 @@ $ open GMAMediationFluctSDK.xcworkspace
 FluctSDKのWikiに実装に必要なリンクをまとめてあるので、そちらをご覧ください。
 
 [Google Mobile Ads SDKのカスタムイベントクラスの導入方法 · voyagegroup/FluctSDK-iOS Wiki](https://github.com/voyagegroup/FluctSDK-iOS/wiki/Google-Mobile-Ads-SDK%E3%81%AE%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%A0%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88%E3%82%AF%E3%83%A9%E3%82%B9%E3%81%AE%E5%B0%8E%E5%85%A5%E6%96%B9%E6%B3%95)
+
+## メディエーション先SDKについて
+
+maio（1.5.0以降）とAdColony（4.1.2.以降）はXcode10ではbuild出来ません。
+開発環境はXcode10系の場合はPodfileに書かれている通り、以下のバージョンを指定してください。
+
+```ruby
+pod 'AdColony', '4.1.1'
+pod 'MaioSDK', '1.4.8'
+```
+
+このプロジェクトはXcode10.3で動くようにしているため、バージョンを下げて対応しています。
